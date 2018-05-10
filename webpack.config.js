@@ -7,7 +7,7 @@ const UglifyjsWebpackPlugin = require('uglifyjs-webpack-plugin');
 module.exports = {
     entry:{
 		main:"./main.js",
-		common:"./common.js"
+		common:['react','react-dom','react-router-dom']
 	},
 	output:{
 		filename:'[name].[hash].js',
